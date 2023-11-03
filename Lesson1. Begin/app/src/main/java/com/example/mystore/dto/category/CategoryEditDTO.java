@@ -3,7 +3,7 @@ package com.example.mystore.dto.category;
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
 
-public class CategoryCreateDTO {
+public class CategoryEditDTO {
     private RequestBody name;
     private MultipartBody.Part image;
     private RequestBody description;
