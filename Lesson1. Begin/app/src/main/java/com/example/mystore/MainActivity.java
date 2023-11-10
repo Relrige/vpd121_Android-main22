@@ -2,9 +2,6 @@ package com.example.mystore;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
 
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -31,14 +28,6 @@ public class MainActivity extends BaseActivity {
         rcCategories.setHasFixedSize(true);
         rcCategories.setLayoutManager(new GridLayoutManager(this, 2, RecyclerView.VERTICAL, false));
 
-        Button deleteButton = findViewById(R.id.deleteButton);
-        deleteButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                removeRecyclerView();
-            }
-        });
-
         ApplicationNetwork
                 .getInstance()
                 .getCategoriesApi()
@@ -58,14 +47,8 @@ public class MainActivity extends BaseActivity {
                     public void onFailure(Call<List<CategoryItemDTO>> call, Throwable t) {
 
                     }
-
                 });
-
     }
 
-    // Метод для видалення RecyclerView
-    private void removeRecyclerView() {
-        ((ViewGroup) rcCategories.getParent()).removeView(rcCategories);
-    }
 
 }
