@@ -66,7 +66,7 @@ public class CategoryEditActivity extends BaseActivity {
 
             ApplicationNetwork.getInstance()
                     .getCategoriesApi()
-                    .editCategory(name, description, image) // Make sure this method is appropriate for editing categories
+                    .editCategory(name, description, image)
                     .enqueue(new Callback<CategoryItemDTO>() {
                         @Override
                         public void onResponse(Call<CategoryItemDTO> call, Response<CategoryItemDTO> response) {

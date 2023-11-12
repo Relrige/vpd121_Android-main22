@@ -21,19 +21,13 @@ public class RegisterActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.register);
+        setContentView(R.layout.activity_register);
 
-        Button buttonSelectPhoto = findViewById(R.id.buttonSelectPhoto);
-        imageViewSelectedPhoto = findViewById(R.id.imageViewSelectedPhoto);
+        //Button buttonSelectPhoto = findViewById(R.id.buttonSelectPhoto);
+        //imageViewSelectedPhoto = findViewById(R.id.imageViewSelectedPhoto);
 
-        buttonSelectPhoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                selectPhoto();
-            }
-        });
 
-        Button buttonRegister = findViewById(R.id.buttonRegister);
+        Button buttonRegister = findViewById(R.id.btnRegister);
         buttonRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

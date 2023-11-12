@@ -44,6 +44,7 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-scalars:2.9.0")
     // https://mvnrepository.com/artifact/com.squareup.okhttp3/logging-interceptor
     implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
+    implementation ("com.oginotihiro:cropview:1.0.0")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
